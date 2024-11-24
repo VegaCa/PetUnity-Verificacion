@@ -1,0 +1,218 @@
+/*=======SECC 1=======*/
+.home1-slider{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+.slider-1{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/home/slider1.jpg');
+}
+.slider-2{
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0)), url('../img/home/slider2.jpg');
+}
+.slider-3{
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0)), url('../img/home/slider3.jpg');
+}
+/*---Texto---*/
+.home1-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+.home1-div-texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.home1-titulo{
+    color: white;
+}
+.home1-titulo span{
+    color: #0066CC;
+}
+
+/*=======SECC 2=======*/
+.home2{
+    margin-top: 5rem;
+}
+.home2-div{
+    display: flex;
+    gap: 1.5rem;
+}
+.home2-div-int{
+    display: flex;
+    flex-direction: column;
+    transition: all .25s ease-in-out;
+}
+.home2-div-int:hover{
+    box-shadow: 0 0 5px 1px #0066CC;
+}
+/*---Texto---*/
+.home2-int1{
+    width: 50%;
+}
+.home2-int2{
+    width: 25%;
+}
+.home2-div-int-texto{
+    padding: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+/*---Fondo---*/
+.home2-div-int-subdiv{
+    overflow: hidden;
+}
+.home2-div-int-subdiv-fondo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 1rem;
+    transition: all .25s ease-in-out;
+}
+.home2-div-int-subdiv-fondo:hover{
+    transform: scale(1.1);
+}
+.home2-fondo1{
+    background-image: url('../img/home/imagen1.png');
+}
+.home2-fondo2{
+    background-image: url('../img/home/imagen2.png');
+}
+.home2-fondo3{
+    background-image: url('../img/home/imagen3.png');
+}
+
+/*=======SECC 3=======*/
+.home3{
+    margin-top: 5rem;
+    background-color: #81c0ff;
+}
+.home3-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+/*---Texto---*/
+.home3-div-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    width: 50%;
+    max-width: 500px;
+}
+.home3-div-texto h3{
+    font-weight: bold;
+    color: black;
+}
+.home3-div-boton{
+    padding: 1rem 2rem;
+    border: solid 1px black;
+    color: black;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: max-content;
+    transition: all .25s ease-in-out;
+}
+.home3-div-boton:hover{
+    color: black;
+    transform: scale(1.1);
+}
+/*---Imagen---*/
+.home3-div-imagen{
+    background-image: url('../img/home/imagen4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 650px;
+}
+
+/*=======SECC 4=======*/
+.home4{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.home4-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+/*---Texto---*/
+.home4-div-titulo{
+    font-weight: bold;
+    color: #0066CC;
+}
+.home4-div-img{
+    width: 10vw;
+    max-width: 100px;
+    min-width: 40px;
+}
+.home4-div-boton{
+    padding: 1rem 2rem;
+    border: solid 1px #0066CC;
+    color: #0066CC;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: max-content;
+    transition: all .25s ease-in-out;
+}
+.home4-div-boton:hover{
+    color: #0066CC;
+    transform: scale(1.1);
+}
+
+/*=======RESPONSIVE=======*/
+@media(max-width: 992px){
+    /*---SECC 1---*/
+    .home1-div {
+        align-items: center;
+    }
+    .home1-div-texto{
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width: 650px){
+    /*---SECC 2---*/
+    .home2-div {
+        flex-direction: column;
+    }
+    .home2-div-int{
+        width: 100%;
+    }
+    .home2-div-int-texto{
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+
+    /*---SECC 3---*/
+    .home3-div{
+        flex-direction: column;
+        gap: 0;
+    }
+    .home3-div-texto{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .home3-div-imagen {
+        width: 120%;
+        margin-left: -7vw;
+    }
+}

@@ -1,0 +1,258 @@
+/*=======SECC 1=======*/
+.cuidado1-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/anuncios/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+
+/*---Texto---*/
+.cuidado1-div{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.cuidado1-div-textos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 500px;
+}
+.cuidado1-titulo{
+	color: white;
+}
+.cuidado1-titulo span{
+	color: #0066CC;
+}
+
+/*=======SECC 2=======*/
+.cuidado2{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.cuidado2-div{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	
+}
+.cuidado-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 35%;
+	cursor: pointer;
+
+	box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+	transition: all .15s ease-in-out !important;
+}
+.cuidado-card:hover{
+	transform: scale(1.05) !important;
+}
+.cuidado-imagen{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30vw;
+	max-width: 480px;
+	max-height: 500px;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+}
+.cuidado-nombre{
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+/*------*/
+.cuidado-raza{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 2rem;
+	justify-content: center;
+}
+.cuidado-raza-div{
+	display: flex;
+	gap: 1rem;
+	width: 20%;
+}
+.cuidado-card-raza{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+	transition: all .15s ease-in-out;
+}
+.cuidado-card-raza:hover{
+	transform: scale(1.05);
+}
+.raza-imagen{
+	max-height: 350px;
+}
+.btn-div{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.btn-volver{
+	padding: 1rem 2rem;
+	background-color: #0066CC;
+	border-radius: 0.5rem;
+	width: max-content;
+	transition: all .15s ease-in-out;
+	color: white !important;
+}
+.btn-volver:hover{
+	transform: scale(1.05);
+}
+/*=======CUIDADO DETALLE=======*/
+.anuncio-detalle2{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.cuidado-detalle-imagen{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30%;
+	height: 500px;
+	border-radius: 1rem;
+
+	box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.5);
+}
+.anuncio-detalle2-div-textos{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+/*--------*/
+.anuncio-textos-titulo{
+	color: #0066CC;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2rem;
+	border-bottom: solid 1px #0066cc6e;
+}
+.raza-edad{
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.cuidado-textos-descripcion{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 2rem;
+
+	border-bottom: solid 1px #0066cc6e;
+}
+.cuidado-texto-descripcion-div{
+	display: flex;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+.cuidado-texto-descripcion-div-int{
+	width: 70%;
+}
+.texto-cuidado-separador{
+	margin: 1rem;
+}
+.volver-btn-detalle{
+	margin-top: 2rem;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.btn-regresar{
+	transition: all .15s ease-in-out;
+	padding: 1rem 2rem;
+	color: white;
+	background-color: #0066CC;
+	border-radius: 0.5rem;
+	width: max-content;
+}
+.btn-regresar:hover{
+	transform: scale(1.05);
+}
+
+/*=======RESPONSIVE=======*/
+@media(max-width: 1200px){
+	.cuidado-raza-div{
+		width: 30%;
+	}
+}
+@media(max-width: 992px){
+	.cuidado1-div {
+		justify-content: center;
+	}
+	.cuidado1-div-textos{
+		text-align: center;
+	}
+
+
+	.cuidado-detalle-imagen{
+		width: 50%;
+	}
+	.cuidado-texto-descripcion-div-int{
+		width: 50%;
+	}
+}
+
+@media(max-width: 768px){
+	.cuidado-raza-div{
+		width: 45%;
+	}
+	.cuidado2-div{
+		gap: 5rem;
+	}
+	.cuidado-card {
+		width: 100%;
+		max-width: 450px;
+	}
+	.cuidado-imagen{
+		max-height: unset;
+		height: 450px;
+	}
+	.raza-imagen{
+		height: 50vw;
+	}
+	/*------*/
+	.cuidado-detalle-imagen{
+		width: 100%;
+		max-width: 450px;
+		max-height: 450px;
+		height: 100vw;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.cuidado-texto-descripcion-div{
+		flex-direction: column;
+	}
+	.cuidado-texto-descripcion-div-int{
+		width: 100%;
+	}
+}
+@media(max-width: 560px){
+	.cuidado-raza-div{
+		width: 100%;
+	}
+	.raza-imagen {
+		height: 100vw;
+		max-width: unset;
+	}
+}
+@media(max-width: 510px){
+	.cuidado-imagen{
+		height: 100vw;
+	}
+}

@@ -1,0 +1,163 @@
+/*=======SECC 1=======*/
+.nosotros1-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/nosotros/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+/*---Texto---*/
+.nosotros1-div{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.nosotros1-div-textos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 500px;
+}
+.nosotros1-titulo{
+	color: white;
+}
+.nosotros1-titulo span{
+	color: #0066CC;
+}
+
+/*=======SECC 2=======*/
+.nosotros2{
+	margin-top: 5rem;
+}
+.nosotros2-div{
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+/*---Texto---*/
+.nosotros2-div-textos{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.nosotros2-div-titulo{
+	color: black;
+	font-weight: bold;
+}
+/*---Imagen---*/
+.nosotros2-imagen{
+	width: 50%;
+}
+
+/*=======SECC 3=======*/
+.nosotros3{
+	margin-top: 5rem;
+}
+.nosotros3-div{
+	display: flex;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
+/*---Texto---*/
+.nosotros3-div-int{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	width: 50%;
+}
+.nosotros3-div-int-titulo{
+	color: black;
+	font-weight: bold;
+}
+.nosotros3-div-int-titulo::after{
+	content: '';
+	display: block;
+	height: 0.5rem;
+	width: 10rem;
+	background: #0066CC;
+}
+
+/*=======SECC 4=======*/
+.nosotros4{
+	margin-top: 5rem;
+	margin-bottom: 2.5rem;
+}
+.nosotros4-div{
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+.nosotros4-div-int{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1.5rem;
+}
+/*---Texto---*/
+.nosotros4-div-img{
+	border-radius: 1.5rem;
+	background: #0066CC;
+	border: solid 3px #0030b3;
+	padding: 1.5rem;
+	transition: all .25s ease-in-out;
+}
+.nosotros4-div-int-subdiv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+.nosotros4-div-int-subdiv:hover .nosotros4-div-img{
+	transform: scale(1.1);
+}
+
+.nosotros4-div-int-subdiv-titulo{
+	color: black;
+}
+
+
+
+
+
+
+
+/*=======RESPONSIVE=======*/
+@media(max-width: 992px){
+	/*---SECC 1---*/
+	.nosotros1-div {
+		justify-content: center;
+	}
+	.nosotros1-div-textos{
+		text-align: center;
+	}
+
+	/*---SECC 2---*/
+	.nosotros2-div {
+		flex-direction: column;
+	}
+	.nosotros2-div-textos{
+		text-align: center;
+		width: 100%;
+	}
+	.nosotros2-imagen {
+		width: 70%;
+	}
+
+	/*---SECC 3---*/
+	.nosotros3-div{
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.nosotros3-div-int{
+		width: 100%;
+	}
+}
+
+@media(max-width: 768px){
+	.nosotros2-imagen {
+		width: 100%;
+	}
+}

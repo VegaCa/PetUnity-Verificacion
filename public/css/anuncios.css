@@ -1,0 +1,197 @@
+/*=======SECC 1=======*/
+.catalogo1-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/anuncios/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+.veterinarias-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/veterinarias/banner.jpg');
+	background-position: top;
+}
+
+/*---Texto---*/
+.catalogo1-div{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.catalogo1-div-textos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 500px;
+}
+.catalogo1-titulo{
+	color: white;
+}
+.catalogo1-titulo span{
+	color: #0066CC;
+}
+
+/*=======SECC 2=======*/
+.catalogo2{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.catalogo2-div{
+	width: 100%;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+}
+/*---Categorías---*/
+.accordion{
+	width: 230px;
+}
+
+.categoria-div-btn{
+	width: max-content;
+}
+.categorias-div-int{
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	transition: all .15s ease-in-out;
+}
+.categoria-btn{
+	background-color: transparent;
+	border: none;
+	color: black;
+	transition: all .25s ease-in-out;
+	max-width: 210px;
+	text-align: left;
+}
+.categoria-btn:hover{
+	color: #0066CC;
+}
+.categoria-activada button{
+	color: #0066CC;
+	font-weight: bold;
+}
+/*---Acordeón---*/
+.accordion-item {
+    border: none;
+}
+.accordion-header{
+	border-bottom: solid 1px #0066CC;
+}
+.accordion-button:not(.collapsed){
+	background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/*---Anuncios---*/
+.buscar-anuncio{
+	border-radius: 0.25rem;
+	border: solid 1px rgba(0, 0, 0, 0.10);
+	padding: 0.5rem;
+	transition: all .25s ease-in-out;
+}
+.buscar-anuncio:focus{
+	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.50);
+}
+input:focus-visible {
+	outline-offset: unset;
+	outline: none;
+}
+.anuncios-div{
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 1.5rem;
+}
+.anuncio-div-int{
+	width: 30%;
+	border: solid 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.5);
+	border-radius: 0.5rem;
+	transition: all .25s ease-in-out;
+	height: max-content;
+}
+.anuncio-div-int:hover{
+	transform: scale(1.055);
+}
+.anuncio-div-int-a{
+	display: flex;
+	flex-direction: column;
+}
+.anuncio-imagen{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.anuncio-imagen::after{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-bottom: 100%;
+}
+.anuncio-div-nombre{
+	color: black;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+
+/*=======RESPONSIVE=======*/
+@media(max-width: 992px){
+	.catalogo1-div {
+		justify-content: center;
+	}
+	.catalogo1-div-textos{
+		text-align: center;
+	}
+	/*---------*/
+	.accordion{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	.categorias-div-int{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.catalogo2-div{
+		flex-direction: column;
+	}
+	.buscar-anuncio{
+		width: 100%;
+	}
+	.anuncios-div{
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+@media(max-width: 768px){
+	.anuncio-div-int{
+		width: 48%;
+	}
+}
+
+@media(max-width: 650px){
+	.anuncio-div-int{
+		width: 45%;
+	}
+}
+
+@media(max-width: 510px){
+	.anuncio-div-int{
+		width: 100%;
+	}
+}

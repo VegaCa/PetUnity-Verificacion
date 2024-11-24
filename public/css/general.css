@@ -1,0 +1,332 @@
+/*=======GENERALES=======*/
+/*color principal: #0066CC*/
+
+.contenedor{
+    max-width: 1600px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titulos-banner{
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000000;
+}
+.textos-banner{
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px #000000;
+}
+.titulos{
+    font-size: 3rem;
+}
+.textos{
+    font-size: 1.25rem;
+}
+
+p, h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*=======HEADER=======*/
+header{
+    border-bottom: solid 1px #00000054;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header-div{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    width: 15vw;
+    max-width: 250px;
+    min-width: 150px;
+}
+
+/*---Enlaces---*/
+.header-div-enlaces{
+    display: flex;
+    position: relative;
+}
+.header-link{
+    padding: 0.3rem 0;
+    color: black;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: all .25s ease-in-out;
+}
+.header-link:hover{
+    color: black;
+}
+.header-hover-especial{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 0;
+    border: solid 2px #0066CC;
+    width: 120px;
+    border-radius: 0.25rem;
+    transition: all .25s ease;
+}
+.nav-link-activo{
+    font-weight: bold;
+    color: black;
+}
+/*------*/
+.link-home{
+    width: 100px;
+}
+.start-home, .link-home:hover~.header-hover-especial{
+    width: 100px;
+    left: 0;
+}
+/*------*/
+.link-nosotros{
+    width: 100px;
+}
+.start-nosotros, .link-nosotros:hover~.header-hover-especial{
+    width: 100px;
+    left: 100px;
+}
+/*------*/
+.link-anuncios{
+    width: 100px;
+}
+.start-anuncios, .link-anuncios:hover~.header-hover-especial{
+    width: 100px;
+    left: 200px;
+}
+/*------*/
+.link-veterinarias{
+    width: 130px;
+}
+.start-veterinarias, .link-veterinarias:hover~.header-hover-especial{
+    width: 130px;
+    left: 300px;
+}
+/*------*/
+.link-cuidados{
+    width: 100px;
+}
+.start-cuidados, .link-cuidados:hover~.header-hover-especial{
+    width: 100px;
+    left: 430px;
+}
+/*------*/
+.link-contactenos{
+    width: 130px;
+}
+.start-contactenos, .link-contactenos:hover~.header-hover-especial{
+    width: 130px;
+    left: 530px;
+}
+/*=======LOGIN=======*/
+.header-login{
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 5rem;
+    background: rgb(229 229 229 / 80%);
+    border-radius: 30px 0 0 30px;
+}
+.dropdown-toggle::after{
+    content: none;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: none;
+}
+.btn-secondary:hover{
+    background-color: transparent;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: transparent;
+}
+.img_micuenta{
+    max-width: 50px;
+}
+.dropdown-item{
+    text-align: right;
+}
+/*=======LANG=======*/
+.btns-lang{
+    position: fixed;
+    right: 0;
+    top: 10rem;
+    z-index: 9;
+    padding: 1rem;
+    padding-left: 1.2rem;
+    background: rgb(229 229 229 / 80%);
+    border-radius: 30px 0 0 30px;
+}
+.btns-lang a{
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.btns-lang .active{
+    border: 3px solid #f1ff23;
+}
+
+/*=======OFF CANVAS=======*/
+.header-offcanvas{
+    background-color: #0f419eb9!important;
+    border-right: 0;
+}
+.navbar-nav{
+    gap: 1rem;
+}
+.offcanvas-enlace{
+    color: #fff !important;
+    transition: all .15s ease-in-out;
+}
+.offcanvas-enlace:hover{
+    font-weight: bold !important;
+}
+.offcanvas-enlace-activo{
+    font-size: 1.7rem;
+    font-weight: bold !important;
+}
+.off-canvas-contenedor-rs{
+    margin-top: 10px;
+}
+.btn-abrir-menu{
+    display: none !important;
+    margin-left: auto;
+}
+/*=======FOOTER=======*/
+footer{
+    background-color: black;
+}
+.footer-div{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-logo{
+    width: 15vw;
+    max-width: 250px;
+    min-width: 150px;
+}
+/*---Enlaces---*/
+.footer-div-enlaces{
+    display: flex;
+    gap: 2rem;
+}
+.footer-link{
+    color: white;
+    transition: all .25s ease-in-out;
+}
+.footer-link::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: white;
+    transition: all .25s ease-in-out;
+}
+.footer-activo::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    transition: all .25s ease-in-out; 
+}
+.footer-link:hover::after{
+    width: 30px;
+    height: 5px;
+}
+.footer-link:hover{
+    transform: scale(1.05);
+    color: white
+}
+/*---Derechos---*/
+.footer-derechos{
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+/*===========WSP===========*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+.whatsapp-float:hover {
+    opacity: 0.6;
+}
+
+/*=======REPONSIVE=======*/
+@media (max-width: 1200px) {
+    .contenedor{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .titulos-banner{
+        font-size: 3rem;
+    }
+    .titulos{
+        font-size: 2.5rem;
+    }
+    .textos{
+        font-size: 1.15rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    /*---General---*/
+    .contenedor{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*---Header---*/
+    .header-link, .header-hover-especial{
+        display: none;
+        visibility: hidden;
+    }
+    .btn-abrir-menu{
+        display: block !important;
+    }
+    .btns-lang{
+        display: none;
+    }
+
+    /*---Footer---*/
+    .footer-div{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .footer-div-enlaces{
+        display: none;
+        visibility: hidden;
+    }
+
+}

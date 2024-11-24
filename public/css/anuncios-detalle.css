@@ -1,0 +1,152 @@
+/*=======SECC 1=======*/
+.anuncio_detalle-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/anuncios/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+.veterinarias-banner{
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url('../img/veterinarias/banner.jpg');
+	background-position: top;
+}
+/*---Texto---*/
+.anuncio_detalle-div{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.anuncio_detalle-div-textos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 500px;
+}
+.anuncio_detalle-titulo{
+	color: white;
+}
+.anuncio_detalle-titulo span{
+	color: #0066CC;
+}
+
+/*=======SECC 2=======*/
+.anuncio_detalle2{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 1.5rem;
+	max-width: 1300px;
+}
+/*---Imagenes---*/
+#img-detalle {
+    transition: background-image 0.25s ease-in-out;
+}
+
+.btn-detalle-img {
+    opacity: 0.4;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.btn-detalle-img.active {
+    opacity: 1;
+}
+/*-----*/
+.anuncio_detalle2-div-imagen{
+	width: 40%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+.anuncio-imagen{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0.5rem;
+}
+.anuncio-imagen::after{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-bottom: 100%;
+}
+.anuncio-imagen-selector{
+	display: flex;
+	gap: 0.75rem;
+}
+/*---Selector---*/
+.btn-detalle-img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	border-radius: 0.5rem;
+	max-width: 50px;
+	max-height: 50px;
+	min-height: 30px;
+	min-width: 30px;
+	height: 5vw;
+	width: 5vw;
+}
+
+/*---Textos---*/
+.anuncio-detalle2-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+}
+.anuncio-detalle2-div-textos{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.anuncio-textos-titulo{
+	color: black;
+	padding-bottom: 0.5rem;
+	border-bottom: solid 1px #0066CC;
+}
+.btn-regresar{
+	padding: 0.75rem 2rem;
+	color: white;
+	background-color: #0066CC;
+	border-radius: 0.5rem;
+	width: max-content;
+	transition: all 0.25s ease-in-out;
+}
+.btn-regresar:hover{
+	transform: scale(1.1);
+}
+.direccion-textos-descripcion{
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+	border-bottom: solid 1px #0066cc93;
+}
+.direccion-textos-descripcion span{
+	color: #0066CC;
+}
+
+
+
+/*=======RESPONSIVE=======*/
+@media(max-width: 992px){
+	.anuncio_detalle-div {
+		justify-content: center;
+	}
+	.anuncio_detalle-div-textos{
+		text-align: center;
+	}
+
+	/*---SECC 2---*/
+	.anuncio_detalle2{
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+	}
+	.anuncio_detalle2-div-imagen,
+	.anuncio-detalle2-div{
+		width: 100%;
+	}
+}
