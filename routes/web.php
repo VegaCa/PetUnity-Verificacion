@@ -12,6 +12,7 @@ use App\Models\Product;
 use App\Models\Veterinary;
 use App\Models\CuidadoRaza;
 use App\Models\CuidadoAnimal;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
