@@ -2,5 +2,5 @@ projectKey=PetUnity
 serverUrl=http://localhost:9000
 serverVersion=10.7.0.96327
 dashboardUrl=http://localhost:9000/dashboard?id=PetUnity
-ceTaskId=72d9169f-c3d8-4862-8e02-e53aae471c46
-ceTaskUrl=http://localhost:9000/api/ce/task?id=72d9169f-c3d8-4862-8e02-e53aae471c46
+ceTaskId=edf6fe6d-cd5d-40b5-8757-999ed0c5ff21
+ceTaskUrl=http://localhost:9000/api/ce/task?id=edf6fe6d-cd5d-40b5-8757-999ed0c5ff21
