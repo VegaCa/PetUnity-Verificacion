@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\xampp\htdocs\PetUnity-Verificacion\phpunit.xml" tests="4" assertions="17" errors="0" failures="0" skipped="0" time="0.873417">
+    <testsuite name="Feature" tests="4" assertions="17" errors="0" failures="0" skipped="0" time="0.873417">
+      <testsuite name="Tests\Feature\AdminCreateCategoryTest" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\AdminCreateCategoryTest.php" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.714714">
+        <testcase name="it_creates_a_category_successfully" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\AdminCreateCategoryTest.php" line="14" class="Tests\Feature\AdminCreateCategoryTest" classname="Tests.Feature.AdminCreateCategoryTest" assertions="2" time="0.665779"/>
+        <testcase name="it_requires_all_fields_to_create_a_category" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\AdminCreateCategoryTest.php" line="42" class="Tests\Feature\AdminCreateCategoryTest" classname="Tests.Feature.AdminCreateCategoryTest" assertions="4" time="0.048935"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ProductControllerEditTest" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\ProductControllerEditTest.php" tests="1" assertions="6" errors="0" failures="0" skipped="0" time="0.109478">
+        <testcase name="an_admin_can_edit_a_product" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\ProductControllerEditTest.php" line="17" class="Tests\Feature\ProductControllerEditTest" classname="Tests.Feature.ProductControllerEditTest" assertions="6" time="0.109478"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ProductControllerTest" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\ProductControllerTest.php" tests="1" assertions="5" errors="0" failures="0" skipped="0" time="0.049224">
+        <testcase name="an_admin_can_create_a_product" file="C:\xampp\htdocs\PetUnity-Verificacion\tests\Feature\ProductControllerTest.php" line="17" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="5" time="0.049224"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
