@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "fb1c6924-9cb2-4486-90f4-7b4cb9de195a",
+		"name": "Verificaion-Validacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30070246"
+	},
+	"item": [
+		{
+			"name": "Vista Anuncios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/anuncios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"anuncios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vista Contacto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/contactenos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"contactenos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Formulario Contacto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_token",
+							"value": "{{csrf_token}}",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "Prueba",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "Pérez",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "999888777",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "juan.perez@example.com",
+							"type": "text"
+						},
+						{
+							"key": "mensaje",
+							"value": "Este es un mensaje de prueba.",
+							"type": "text"
+						},
+						{
+							"key": "politicap",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sendForm",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sendForm"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.sendRequest('http://127.0.0.1:8000/contactenos', function (err, res) {\r",
+					"    if (!err) {\r",
+					"        // Usamos un regex más robusto para capturar el token CSRF\r",
+					"        const tokenMatch = res.text().match(/<input\\s+name=[\"']_token[\"']\\s+type=[\"']hidden[\"']\\s+value=[\"'](.+?)[\"']/);\r",
+					"        if (tokenMatch) {\r",
+					"            pm.globals.set('csrf_token', tokenMatch[1]);\r",
+					"            console.log('Token capturado:', tokenMatch[1]);\r",
+					"        } else {\r",
+					"            // Si no se encuentra el token, asignar un valor predeterminado\r",
+					"            pm.globals.set('csrf_token', 'no hay token');\r",
+					"            console.log('No se encontró token CSRF');\r",
+					"        }\r",
+					"    }\r",
+					"});\r",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

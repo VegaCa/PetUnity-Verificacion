@@ -26,7 +26,7 @@ class ProductControllerEditTest extends TestCase
 
         // Datos del producto original con una imagen
         $oldImage = UploadedFile::fake()->image('old_image.jpg');
-        $oldImageName = date('Ymdhis') . rand() . '.' . $oldImage->extension();
+        $oldImageName = date('Ymdhis') . random_int(1000, 9999) . '.' . $oldImage->extension();
         $oldImagePath = 'storage/imagenes/' . $oldImageName;
 
         Storage::disk('public')->put($oldImagePath, $oldImage->getContent());

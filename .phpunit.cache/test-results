@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"Tests\\Feature\\AdminCreateCategoryTest::it_creates_a_category_successfully":0.117,"Tests\\Feature\\AdminCreateCategoryTest::it_requires_all_fields_to_create_a_category":0.029,"Tests\\Feature\\ProductControllerEditTest::an_admin_can_edit_a_product":0.121,"Tests\\Feature\\ProductControllerTest::an_admin_can_create_a_product":0.042}}
