@@ -11,18 +11,18 @@
 ---
 
 ## 📚 Índice
-- [Objetivo](#objetivo)
-- [Funcionalidades principales](#funcionalidades-principales)
-  - [Ver anuncios de las mascotas perdidas](#ver-anuncios-de-las-mascotas-perdidas)
-  - [Ver veterinarias recomendadas](#ver-veterinarias-recomendadas)
-  - [Ver cuidado de mascotas](#ver-cuidado-de-mascotas)
--🔄 [Pipeline con Jenkins](#pipeline-con-jenkins)
-  -🚀 [Construcción Automática](#construcción-automática)
-  -🔍 [Análisis estático de código](#análisis-estático-de-código)
-  -🧪 [Pruebas Unitarias](#pruebas-unitarias)
-  -🛠️ [Pruebas Funcionales (Postman y Newman)](#pruebas-funcionales-postman-y-newman)
-  -⚡ [Pruebas de Performance](#pruebas-de-performance)
-  -🔒 [Pruebas de Seguridad](#pruebas-de-seguridad)
+- 🎯 [Objetivo](#objetivo)
+- ⚙️ [Funcionalidades principales](#funcionalidades-principales)
+  - 📢 [Ver anuncios de las mascotas perdidas](#ver-anuncios-de-las-mascotas-perdidas)
+  - 📍 [Ver veterinarias recomendadas](#ver-veterinarias-recomendadas)
+  - ℹ️ [Ver cuidado de mascotas](#ver-cuidado-de-mascotas)
+- 🔄 [Pipeline con Jenkins](#pipeline-con-jenkins)
+  - 🚀 [Construcción Automática](#construcción-automática)
+  - 🔍 [Análisis estático de código](#análisis-estático-de-código)
+  - 🧪 [Pruebas Unitarias](#pruebas-unitarias)
+  - 🛠️ [Pruebas Funcionales (Postman y Newman)](#pruebas-funcionales-postman-y-newman)
+  - ⚡ [Pruebas de Performance](#pruebas-de-performance)
+  - 🔒 [Pruebas de Seguridad](#pruebas-de-seguridad)
 
 ---
 ## Objetivo
